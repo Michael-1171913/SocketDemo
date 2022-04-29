@@ -1,12 +1,24 @@
+/*
+ A lot of the SDL code I was unfamiliar with, so I used https://lazyfoo.net/tutorials/SDL/ as a guide.
+ I followed the tutorials to learn SDL, so my code is similar.
+*/
+
 #include <SDL.h>
 #include <SDL_image.h>
 #include <stdio.h>
 #include <string>
 #include <vector>
 #include <time.h>
+
 #include "Player.h"
 #include "Crosshair.h"
 #include "Globals.h"
+#include "SocketUtil.h"
+#include <thread>
+#include <iostream>
+#include "SocketAddressFactory.h"
+
+
 
 bool init();
 bool loadMedia();
@@ -102,57 +114,90 @@ void close()
 // SDL requires this type of main function
 int main(int argc, char* args[])
 {
-	if (!init())
-	{
-		printf("init failure");
-	}
-	else
-	{
-		if (!loadMedia())
-		{
-			printf("loadMedia failure");
-		}
-		else
-		{
-			bool quit = false;
+	SocketUtil::StaticInit();
 
-			SDL_Event e;
+	TCPSocketPtr serverSocket = SocketUtil::CreateTCPSocket(SocketAddressFamily::INET);
+	SocketAddressPtr serverAddress = SocketAddressFactory::CreateIPv4FromString("127.0.0.1:8080");
+	serverSocket->Bind(*serverAddress);
 
-			Color clientColor = Color(rand() % 155 + 100, rand() % 155 + 100, rand() % 155 + 100);
-			player1.setColor(clientColor);
-			crosshair1.setColor(clientColor);
+	serverSocket->Listen();
 
-			while (!quit)
-			{
-				while (SDL_PollEvent(&e) != 0)
-				{
-					if (e.type == SDL_QUIT)
-					{
-						quit = true;
-					}
+	std::thread serverThread([&serverSocket]() {
+		SocketAddress incomingAddress;
+		TCPSocketPtr connSocket = serverSocket->Accept(incomingAddress);
+		std::cout << "Accepted\n";
 
-					player1.handleEvent(e);
-					crosshair1.handleEvent(e);
-				}
+		char buffer[4096];
+		size_t nBytesReceived = connSocket->Receive(buffer, sizeof(buffer));
 
-				// fill screen with SDL_SetRenderDrawColor
-				SDL_RenderClear(gRenderer);
+		std::string msg(buffer, nBytesReceived);
 
-				// update textures
-				player1.update();
-				crosshair1.update();
+		std::cout << msg << std::endl;
+		});
 
-				// render textures
-				player1.render();
-				crosshair1.render();
+	TCPSocketPtr clientSocket = SocketUtil::CreateTCPSocket(SocketAddressFamily::INET);
+	SocketAddressPtr clientAddr = SocketAddressFactory::CreateIPv4FromString("127.0.0.1:8081");
+	clientSocket->Bind(SocketAddress());
+	clientSocket->Connect(*serverAddress);
+	std::cout << "Connected\n";
 
-				// update screen
-				SDL_RenderPresent(gRenderer);
-			}
-		}
-	}
+	std::string msg("Hello!");
+	clientSocket->Send(msg.c_str(), msg.length());
 
-	close();
+	serverThread.join();
+	SocketUtil::CleanUp();
+
+	//if (!init())
+	//{
+	//	printf("init failure");
+	//}
+	//else
+	//{
+	//	if (!loadMedia())
+	//	{
+	//		printf("loadMedia failure");
+	//	}
+	//	else
+	//	{
+	//		bool quit = false;
+
+	//		SDL_Event e;
+
+	//		Color clientColor = Color(rand() % 155 + 100, rand() % 155 + 100, rand() % 155 + 100);
+	//		player1.setColor(clientColor);
+	//		crosshair1.setColor(clientColor);
+
+	//		while (!quit)
+	//		{
+	//			while (SDL_PollEvent(&e) != 0)
+	//			{
+	//				if (e.type == SDL_QUIT)
+	//				{
+	//					quit = true;
+	//				}
+
+	//				player1.handleEvent(e);
+	//				crosshair1.handleEvent(e);
+	//			}
+
+	//			// fill screen with SDL_SetRenderDrawColor
+	//			SDL_RenderClear(gRenderer);
+
+	//			// update textures
+	//			player1.update();
+	//			crosshair1.update();
+
+	//			// render textures
+	//			player1.render();
+	//			crosshair1.render();
+
+	//			// update screen
+	//			SDL_RenderPresent(gRenderer);
+	//		}
+	//	}
+	//}
+
+	//close();
 
 	return 0;
 }

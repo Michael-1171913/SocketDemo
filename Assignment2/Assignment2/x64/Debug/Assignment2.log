@@ -1,15 +1,66 @@
-﻿  Player.cpp
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Color.h(11,7): warning C4244: '=': conversion from 'double' to 'Uint8', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Color.h(12,7): warning C4244: '=': conversion from 'double' to 'Uint8', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Color.h(13,7): warning C4244: '=': conversion from 'double' to 'Uint8', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Player.cpp(33,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Player.cpp(34,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Player.cpp(63,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Player.cpp(63,32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+﻿  SocketAddressFactory.cpp
+  TCPSocket.cpp
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(51,41): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(51,33): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(51): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(51,33): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(52,16): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(52,8): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(52): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(52,8): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(53,22): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(53,14): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(53): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(53,14): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(54,16): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(54,8): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(54): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(54,8): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(55,22): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(55,14): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(55): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(55,14): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(56,16): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(56,8): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(56): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(56,8): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(59,22): error C3646: 'CreateTCPSocket': unknown override specifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(59,38): error C2275: 'SocketAddressFamily': illegal use of this type as an expression
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(35): message : see declaration of 'SocketAddressFamily'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(59,58): error C2146: syntax error: missing ')' before identifier 'inFamily'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(59,67): error C2238: unexpected token(s) preceding ';'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(63,77): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(63,69): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(63): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(63,69): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64,52): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64,44): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64,44): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64,99): error C2065: 'TCPSocketPtr': undeclared identifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64,91): error C2923: 'std::vector': 'TCPSocketPtr' is not a valid template type argument for parameter '_Ty'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64): message : see declaration of 'TCPSocketPtr'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(64,91): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(443): message : see declaration of 'std::vector'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\TCPSocket.cpp(43,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\TCPSocket.cpp(54,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Source.cpp
 C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Color.h(11,7): warning C4244: '=': conversion from 'double' to 'Uint8', possible loss of data
 C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Color.h(12,7): warning C4244: '=': conversion from 'double' to 'Uint8', possible loss of data
 C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Color.h(13,7): warning C4244: '=': conversion from 'double' to 'Uint8', possible loss of data
-C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Source.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\Source.cpp(39,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  UDPSocket.cpp
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(58,22): error C3646: 'CreateUDPSocket': unknown override specifier
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(58,38): error C2275: 'SocketAddressFamily': illegal use of this type as an expression
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(35): message : see declaration of 'SocketAddressFamily'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(58,58): error C2146: syntax error: missing ')' before identifier 'inFamily'
+C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\Assignment2\SocketUtil.h(58,67): error C2238: unexpected token(s) preceding ';'
   Generating Code...
-  Assignment2.vcxproj -> C:\Users\Michael\Documents\Folders\Programming\C++\GPR Network Programming\SocketDemo\Assignment2\x64\Debug\Assignment2.exe
